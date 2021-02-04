@@ -1,0 +1,67 @@
+body{
+    background-color: aqua; 
+   } 
+
+.text-center {
+    text-align: center;
+}
+.container {
+    display: grid;
+    grid-template-areas: "dis dis dis dis " "a b c k" "e g y s"  ;
+    height: 100vh;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+
+
+.discription {
+    grid-area: dis;
+}
+.cityWeather-1 {
+    grid-area: a;
+}
+.cityWeather-2 {
+    grid-area: b;
+}
+.cityWeather-3 {
+    grid-area: c;
+}
+.cityWeather-4 {
+    grid-area: e;
+}
+.cityWeather-5 {
+    grid-area: g;
+}
+.cityWeather-6 {
+    grid-area: y;
+}
+.cityWeather-7 {
+    grid-area: s;
+}
+.cityWeather-8 {
+    grid-area: k;
+}
+
+@media screen and (max-width: 900px) {
+
+    .container {
+        display: grid;    
+        grid-template-areas: 
+
+      "dis"
+      "a"
+      "b"
+      "c"
+      "d"
+      "e"
+      "g"
+      "y"
+      "s" 
+      "k" ;
+      
+    grid-template-rows: 1fr;  
+    grid-template-columns: 1fr;
+    height: 100vh;
+    margin-left: 40%;
+}
